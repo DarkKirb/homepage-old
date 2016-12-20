@@ -1,0 +1,27 @@
+@import "base.css";
+.spoilertitle {
+  display: none;
+  cursor: pointer;
+}
+
+nav {
+  width: 10%;
+  display:table-cell;
+}
+main {
+  width: 70%;
+  display:table-cell;
+  padding: 5px;
+}
+aside {
+  width: 20%;
+  display: table-cell;
+}
+.table {
+  background-color: interhit;
+  display: table;
+  width: 100%;
+}
+.tablerow {
+  display:table-row;
+}

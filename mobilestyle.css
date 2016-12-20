@@ -1,0 +1,8 @@
+@import "base.css";
+.spoilertitle {
+  cursor: pointer;
+  color: green;
+}
+.spoilerContent {
+  display: none;
+}
