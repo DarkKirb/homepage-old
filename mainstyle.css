@@ -13,10 +13,6 @@ main {
   display:table-cell;
   padding: 5px;
 }
-aside {
-  width: 20%;
-  display: table-cell;
-}
 .table {
   background-color: interhit;
   display: table;

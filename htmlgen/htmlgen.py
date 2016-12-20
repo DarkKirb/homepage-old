@@ -37,7 +37,7 @@ class HTMLgen:
                 main=main+("<a href=\"comments.py?aid=%i\">Comments (%i)</a>") % (self.ids[x], storage.count("comments-%i"%self.ids[x]))
             x=x-1
         if not comments:
-            styleargs = {"title":self.title,"nav":nav,"main":main,"aside":self.asideHTML,"footer":"Copyright 2016 Morten"}
+            styleargs = {"title":self.title,"nav":nav,"main":main,"aside":self.asideHTML,"footer":"<a href=\"https://github.com/Mtgxyz2/homepage\">Design and Code by Morten Delenk</a> - <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Content licensed under CC-BY-SA</a>"}
         else:
-            styleargs = {"title":self.title,"nav":nav,"main":self.asideHTML+main,"aside":"","footer":"Copyright 2016 Morten"}
+            styleargs = {"title":self.title,"nav":nav,"main":self.asideHTML+main,"aside":"","footer":"<a href=\"https://github.com/Mtgxyz2/homepage\">Design and Code by Morten Delenk</a> - <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Content licensed under CC-BY-SA</a>"}
         return '\n'.join([line for line in (self.layout%styleargs).split('\n') if line.strip() != ''])

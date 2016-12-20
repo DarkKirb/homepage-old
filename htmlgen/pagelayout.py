@@ -42,13 +42,6 @@ def getLayoutXML():
     nav.text="%(nav)s"
     main = SubElement(tablerow, "main")
     main.text="%(main)s"
-    asidespoiler = SubElement(tablerow, "div")
-    asidespoiler.set("class", "spoilertitle")
-    asidespoiler.set("tabindex", "2")
-    asidespoiler.text="Aside information"
-    aside = SubElement(tablerow, "aside")
-    aside.set("class", "spoilerContent")
-    aside.text="%(aside)s"
     hr2 = SubElement(body, "hr")
     footer = SubElement(body, "footer")
     footer.text="%(footer)s"
